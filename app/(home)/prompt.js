@@ -19,9 +19,9 @@ import {
   ButtonText,
 } from "@gluestack-ui/themed";
 
-import Screen from "./Screen";
+import Screen from "../../components/Screen";
 
-export default function PromptScreen() {
+export default function prompt() {
   return (
     <Screen>
       <Heading textAlign="center" mb="$5">

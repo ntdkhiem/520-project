@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Button,
   ButtonText,
@@ -13,15 +12,19 @@ import {
   AlertCircleIcon,
   VStack,
   Heading,
+  Box,
+  LinkText,
+  Text,
 } from "@gluestack-ui/themed";
+import { Link } from "expo-router";
 
-import Screen from "./Screen";
+import Screen from "../../components/Screen";
 
-export default function SignupScreen() {
+export default function login() {
   return (
     <Screen>
       <Heading textAlign="center" mb="$5">
-        Register for an account
+        Sign in to your account
       </Heading>
       <VStack space="xl" mb="$5">
         <FormControl size={"md"} isRequired={false}>
@@ -32,13 +35,7 @@ export default function SignupScreen() {
 
         <FormControl size={"md"} isRequired={false}>
           <Input>
-            <InputField type="text" placeholder="Username" />
-          </Input>
-        </FormControl>
-
-        <FormControl size={"md"} isRequired={false}>
-          <Input>
-            <InputField type="password" placeholder="Password" />
+            <InputField type="password" placeholder="password" />
           </Input>
 
           <FormControlHelper>
@@ -55,9 +52,18 @@ export default function SignupScreen() {
           </FormControlError>
         </FormControl>
       </VStack>
+
       <Button action={"primary"} variant={"solid"} isDisabled={false}>
-        <ButtonText>Register</ButtonText>
+        <ButtonText>Login</ButtonText>
       </Button>
+
+      <Box mt="$5" mx="auto" alignItems="center">
+        <Link href="/register">
+          <Text>
+            Don't have an account? <LinkText>Register here</LinkText>
+          </Text>
+        </Link>
+      </Box>
     </Screen>
   );
 }

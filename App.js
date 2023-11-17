@@ -11,7 +11,7 @@ export default function App() {
     <GluestackUIProvider config={config}>
       {/* <LoginScreen /> */}
       {/* <SignupScreen /> */}
-      <PromptScreen />
+      {/* <PromptScreen /> */}
       <StatusBar style="auto" />
     </GluestackUIProvider>
   );
