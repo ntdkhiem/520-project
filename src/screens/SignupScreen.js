@@ -17,11 +17,11 @@ import {
 
 import Screen from "./Screen";
 
-export default function LoginScreen() {
+export default function SignupScreen() {
   return (
     <Screen>
       <Heading textAlign="center" mb="$5">
-        Sign in to your account
+        Register for an account
       </Heading>
       <VStack space="xl" mb="$5">
         <FormControl size={"md"} isRequired={false}>
@@ -32,7 +32,13 @@ export default function LoginScreen() {
 
         <FormControl size={"md"} isRequired={false}>
           <Input>
-            <InputField type="password" placeholder="password" />
+            <InputField type="text" placeholder="Username" />
+          </Input>
+        </FormControl>
+
+        <FormControl size={"md"} isRequired={false}>
+          <Input>
+            <InputField type="password" placeholder="Password" />
           </Input>
 
           <FormControlHelper>
@@ -50,7 +56,7 @@ export default function LoginScreen() {
         </FormControl>
       </VStack>
       <Button action={"primary"} variant={"solid"} isDisabled={false}>
-        <ButtonText>Login</ButtonText>
+        <ButtonText>Register</ButtonText>
       </Button>
     </Screen>
   );
