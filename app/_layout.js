@@ -5,7 +5,11 @@ import { config } from "@gluestack-ui/config";
 export default function Layout() {
   return (
     <GluestackUIProvider config={config}>
-      <Stack />
+      <Stack
+        screenOptions={{
+          headerShown: false,
+        }}
+      />
     </GluestackUIProvider>
   );
 }

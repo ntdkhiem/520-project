@@ -3,14 +3,8 @@ import { SafeAreaView } from "react-native";
 
 const Screen = (props) => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <View
-        backgroundColor="white"
-        paddingHorizontal={20}
-        justifyContent="center"
-        flex={1}
-        {...props}
-      >
+    <SafeAreaView style={{ backgroundColor: "white", flex: 1 }}>
+      <View paddingHorizontal={20} justifyContent="center" flex={1} {...props}>
         {props.children}
       </View>
     </SafeAreaView>

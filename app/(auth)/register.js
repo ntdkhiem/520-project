@@ -23,10 +23,11 @@ import Screen from "../../components/Screen";
 export default function register() {
   return (
     <Screen>
-      <Heading textAlign="center" mb="$5">
+      <Heading textAlign="center" mb="$10">
         Register for an account
       </Heading>
-      <VStack space="xl" mb="$5">
+
+      <VStack space="xl" mb="$10">
         <FormControl size={"md"} isRequired={false}>
           <Input>
             <InputField type="email" placeholder="Email" />

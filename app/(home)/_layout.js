@@ -16,7 +16,6 @@ export default function Layout() {
         name="responses"
         options={{
           tabBarLabel: "Responses",
-          //   tabBarIcon: () => <Icon as={MessageCircle} />,
           tabBarIcon: ({ color, size }) => {
             return <Icon as={MessageCircle} color={color} size={size} />;
           },
