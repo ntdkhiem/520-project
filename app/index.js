@@ -17,7 +17,7 @@ export default function index() {
             <ButtonText>Register Page</ButtonText>
           </Button>
         </Link>
-        <Link href="/prompt" asChild>
+        <Link href="/responses" asChild>
           <Button active={"primary"} variant={"solid"}>
             <ButtonText>Prompt Page</ButtonText>
           </Button>
