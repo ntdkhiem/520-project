@@ -1,12 +1,28 @@
-import { Button, ButtonText } from "@gluestack-ui/themed";
+import { Button, ButtonText, VStack } from "@gluestack-ui/themed";
 import { Link } from "expo-router";
+
+import Screen from "../components/Screen";
 
 export default function index() {
   return (
-    <>
-      <Link href="/login">Login</Link>
-      <Link href="/register">Register</Link>
-      <Link href="/prompt">Prompt</Link>
-    </>
+    <Screen>
+      <VStack space="md">
+        <Link href="/login" asChild>
+          <Button active={"primary"} variant={"solid"}>
+            <ButtonText>Login Page</ButtonText>
+          </Button>
+        </Link>
+        <Link href="/register" asChild>
+          <Button active={"primary"} variant={"solid"}>
+            <ButtonText>Register Page</ButtonText>
+          </Button>
+        </Link>
+        <Link href="/prompt" asChild>
+          <Button active={"primary"} variant={"solid"}>
+            <ButtonText>Prompt Page</ButtonText>
+          </Button>
+        </Link>
+      </VStack>
+    </Screen>
   );
 }
